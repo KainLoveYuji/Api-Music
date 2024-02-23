@@ -58,15 +58,15 @@ app.get("/speedup", (req, res) => {
 app.listen(port, "0.0.0.0", function () {
     console.log(`Server listening on port ${port}\n`)
 })
-app.get("/videogai", (req, res) => {
+app.get("/h3nt41", (req, res) => {
     const key = req.query.apikey
     const result = {}
     result.code = 200
-    const videoList = fs.readdirSync("./public/videogai")
-    const randomVideo = videoList[Math.floor(Math.random() * videoList.length)]
-    result.url = `https://api-music-44pz.onrender.com/videogai/${randomVideo}`
-    result.author = "presel"
-    result.source = "random video gái"
+    const videoList = fs.readdirSync("./public/h3nt41")
+    const randomImages = imagesList[Math.floor(Math.random() * imagesList.length)]
+    result.data = `https://api-music-44pz.onrender.com/h3nt41/${randomImages}`
+    result.author = "Kain Naji"
+    result.source = "random images hentai"
     res.header("Content-type", "application/json; charset=utf-8")
     if (apikey.includes(key)) {
         res.send(JSON.stringify(result, null, 2))
