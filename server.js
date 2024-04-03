@@ -13,7 +13,7 @@ app.use(limiter)
 app.use(cors())
 // api key
 const apikey = [
-    "ShyraZiess1911"
+    "KainRiyu"
 ]
 app.get("/vd", (req, res) => {
     const key = req.query.apikey
@@ -21,7 +21,7 @@ app.get("/vd", (req, res) => {
     result.code = 200
     const videoList = fs.readdirSync("./public/vd")
     const randomVideo = videoList[Math.floor(Math.random() * videoList.length)]
-    result.data = `https://api-music-7m24.onrender.com/vd/${randomVideo}`
+    result.data = `https://api-music-0lm6.onrender.com/vd/${randomVideo}`
     result.author = "Kain x Carrion"
     result.source = "random video gaixinh"
     res.header("Content-type", "application/json; charset=utf-8")
@@ -41,7 +41,7 @@ app.get("/speedup", (req, res) => {
     result.code = 200
     const audioList = fs.readdirSync("./public/speedup")
     const randomAudio = audioList[Math.floor(Math.random() * audioList.length)]
-    result.data = `https://api-music-7m24.onrender.com/speedup/${randomAudio}`
+    result.data = `https://api-music-0lm6.onrender.com/speedup/${randomAudio}`
     result.author = "Nguyên"
     result.source = "Random"
     res.header("Content-type", "application/json; charset=utf-8")
@@ -64,7 +64,7 @@ app.get("/h3nt41", (req, res) => {
     result.code = 200
     const videoList = fs.readdirSync("./public/h3nt41")
     const randomImages = videoList[Math.floor(Math.random() * videoList.length)]
-    result.data = `https://api-music-7m24.onrender.com/h3nt41/${randomImages}`
+    result.data = `https://api-music-0lm6.onrender.com/h3nt41/${randomImages}`
     result.author = "Kain Naji"
     result.source = "random images hentai"
     res.header("Content-type", "application/json; charset=utf-8")
@@ -84,7 +84,7 @@ app.get("/nhac", (req, res) => {
     result.code = 200
     const audioList = fs.readdirSync("./public/nhac")
     const randomAudio = audioList[Math.floor(Math.random() * audioList.length)]
-    result.url = `https://api-music-44pz.onrender.com/nhac/${randomAudio}`
+    result.url = `https://api-music-0lm6.onrender.com/nhac/${randomAudio}`
     result.author = "Nguyên"
     result.source = "Random"
     res.header("Content-type", "application/json; charset=utf-8")
@@ -104,7 +104,7 @@ app.get("/", (req, res) => {
     result.code = 200
     const audioList = fs.readdirSync("./public/index.html")
     const randomAudio = audioList[Math.floor(Math.random() * audioList.length)]
-    result.url = `https://api-music-44pz.onrender.com/nhac/${randomAudio}`
+    result.url = `https://api-music-0lm6.onrender.com/nhac/${randomAudio}`
     result.author = "Nguyên"
     result.source = "Random"
     res.header("Content-type", "application/json; charset=utf-8")
